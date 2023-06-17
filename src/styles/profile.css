@@ -1,87 +1,71 @@
+.profile {
+  background: #000000;
+  color: #ffffff;
+}
+
 .ProfilePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 .profile-section {
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
-.profile-section a {
-  display: inline-block;
-  position: relative;
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  color: #000000; /* Add this line to set text color */
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000; /* Add this line to set text color */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #000000; /* Add this line to set text color */
+}
+
+ul li svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+ul li a {
+  color: #000000;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
-.profile-section a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.2s ease-in-out;
-}
-.profile-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ul li a:hover {
+  color: #aaaaaa;
 }
 
-.profile-section a:hover {
-  color: #ff4500;
-}
-
-.profile-section a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.profile-section h2 {
-  margin-top: 5%;
-}
-
-.profile-section p {
-  margin: 0;
-  font-size: 1.2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.profile-section p svg {
+ul li::before {
+  content: '▹';
   margin-right: 5px;
+  color: #000000;
 }
 
-@media only screen and (max-width: 768px) {
-  .profile-section p {
-    font-size: 1rem;
-  }
-}.resume-options {
-  position: fixed;
-  margin-left: 20%;
-  width: 100%;
-  z-index: 9999;
+ul li:last-child::before {
+  display: none;
 }
-
-@media (min-width: 1024px) {
-  .resume-options {
-    top: 10%;
-  }
-}
-
-@media (max-width: 1023px) {
-  .resume-options {
-    top: 2%;
-  }
-}
-

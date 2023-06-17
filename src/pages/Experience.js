@@ -10,6 +10,7 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Experience() {
   return (
+    <div className="Exp">
     <div className="experience">
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
@@ -65,7 +66,22 @@ function Experience() {
           </p>
 
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="05/2023 - 08/2023"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            GSSOC Contributor
+          </h3>
+
+          <h5 className="vertical-timeline-element-subtitle">
+            Open source contributions
+          </h5>
+        </VerticalTimelineElement>
       </VerticalTimeline>
+    </div>
     </div>
   );
 }

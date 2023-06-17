@@ -1,97 +1,95 @@
 .about-section {
-  background-color: #1e1e1e;
-    padding: 50px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-  }
-  
-  .about-header {
-    margin-bottom: 50px;
-  }
-  
-  .about-header h1 {
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-photo {
-    margin-right: 50px;
-  margin-bottom: 20px;
-  padding: 10px;
-   width: 250px;
-  height: 350px;
-  object-fit: cover;
-  object-position: center center;
-    border: 2px solid #ddd;
-  box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .about-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .about-details {
-    text-align: left;
-  }
-  
-  .about-details h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .about-details p {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .about-icon {
-    margin-right: 10px;
-    color: green;
-  }
-  
-  .about-description {
-    margin-top: 50px;
-    text-align: left;
-  }
-  
-  .about-description h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .about-description ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .about-description li {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .about-content {
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .about-details {
-      margin-left: 0
-    }
+  background-color: #121212;
+  color: #ffffff;
+  padding: 40px;
 }
-  
+
+.about-header {
+  text-align: center;
+}
+
+.about-header h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin: 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.about-info {
+  display: flex;
+  gap: 40px;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-details h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.about-details p {
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.about-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.hire-me-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #121212;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hire-me-button:hover {
+  background-color: #e0e0e0;
+  color: #121212;
+}
+
+.about-description h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+.about-description p {
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.about-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.about-description ul li {
+  margin-bottom: 5px;
+  color: #ffffff;
+}

@@ -14,7 +14,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="left">
-        <p>&copy; 2023 Swapnil Jadhav. All rights reserved.</p>
+        <p>&copy; 2023 <a href="https://github.com/Swapnil-2503">Swapnil Jadhav</a>. All rights reserved.Made by ❤️ using React.js library</p>
       </div>
       <div className="right">
         <a href="https://www.facebook.com/100023952010963">

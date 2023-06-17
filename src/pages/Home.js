@@ -1,18 +1,18 @@
 import React ,{useState, useEffect} from "react";
 import Typed from 'react-typed';
 import '../styles/Home.css'
-import SplashScreen from './SplashScreen';
+import Resume from '../assets/pdf/Resume_Swapnil_Jadhav.pdf'
 import { Email, Facebook, GitHub, Instagram, LinkedIn, Twitter, YouTube } from "@material-ui/icons";
 
 function Home() {
-
-  const [showSplash, setShowSplash] = useState(true);
+  const [showHireMe, setShowHireMe] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setShowSplash(false);
+      setShowHireMe(true);
     }, 5000);
   }, []);
+  
 
   const quotes=[
     "Success is not final, failure is not fatal: it is the courage to continue that counts.",
@@ -48,13 +48,7 @@ const [showMotivationBox, setShowMotivationBox] = useState(true);
     return () => clearTimeout(timeoutId);
   }, []);
 
-
   return (
-    <div>
-    {showSplash ? (
-      <SplashScreen />
-    ) : (
-      <div>
     <div className="home">
       <div id="hero" class="hero route bg-image">
       {showMotivationBox && (
@@ -63,34 +57,42 @@ const [showMotivationBox, setShowMotivationBox] = useState(true);
         </div>
       )}
         <div class="hero-content display-table">
+        <div class="droplet"></div>
           <div class="table-cell">
             <div class="container">
+            <div class="droplet"></div>
               <p class="display-6 color-d">Welcome to my world!</p>
               <h1 class="hero-title mb-4">I am Swapnil Jadhav</h1>
               <p class="hero-subtitle">
                 <Typed
-                  strings={['YouTuber', 'Developer', 'Freelancer']}
+                  strings={['Full Stack Developer', 'Content Creator', 'Open Source Enthusiast', 'Problem Solver']}
                   typeSpeed={50}
                   backSpeed={50}
                   loop
                 />
               </p>
               </div>
+              <div class="droplet"></div>
               </div>
               <div className="link">
                <a className="b" href="htttps://www.linkedin.com/in/swapnil-jadhav03"><LinkedIn/></a>
                <a className="bl" href="https://www.github.com/Swapnil-2503"><GitHub/></a>
                <a className="r" href="mailto://swapniljadhav6022@gmailcom"><Email/></a>  
-               <a className="b" href="https://www.facebook.com/100023952010963"><Facebook /></a>
-               <a className="b" href="https://www.twitter.com/SwapNetFlix"><Twitter /></a>
-               <a className="r" href="https://www.instagram.com/swapnil_._jadhav"><Instagram /></a> 
-               <a className="r" href="https://www.youtube.com/@NerveNetSolutions"><YouTube/></a>     
+               <div class="droplet"></div>
+               <a className="c" href="https://www.twitter.com/SwapNetFlix"><Twitter /></a>
+               <a className="r" href="https://www.instagram.com/swapnil.2503"><Instagram /></a> 
+               <a className="r" href="https://www.youtube.com/@SwapNet"><YouTube/></a>    
+               <div class="droplet"></div>
                </div>
+               <div class="droplet"></div>
+        </div>
+        <div class="droplet"></div>
+        <div className={`hire-me-container ${showHireMe ? 'show' : ''}`}>
+          <a className="hire-me-link" href={Resume} target="_blank" rel="noopener noreferrer">
+            Hire Me
+          </a>
         </div>
       </div>
-    </div>
-    </div>
-      )}
     </div>
   );
 }

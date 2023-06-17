@@ -1,185 +1,164 @@
-/* Home page styles */
-
 .home {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  background-image: url("https://cdn.pixabay.com/photo/2015/12/09/17/12/keyboard-1081816_1280.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #121212;
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.droplet {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: radial-gradient(circle, #5a5e5f 50%, transparent 80%);
+  animation: falling-droplet 15s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes falling-droplet {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
 
 .hero {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero .bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 100%;
-  opacity: 0.8;
 }
 
-.hero .motivation-box {
+.motivation-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
-  z-index: 10;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.hero .hero-content {
-  position: relative;
-  z-index: 20;
+.motivation-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 20px;
 }
 
-.hero .hero-content .container {
-  max-width: 900px;
-  padding: 0 1rem;
+.container {
+  text-align: center;
 }
 
-.hero .display-6 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: #00ffcc;
-  margin-bottom: 1rem;
+.display-6 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
-.hero .hero-title {
-  font-size: 6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: #fff;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-  animation: blink 1s infinite;
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.hero .hero-subtitle {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: #fff;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.2;
-  }
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .link {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .link a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link a:hover {
+  color: #2836ff;
+}
+
+.link a.bl:hover {
+  color: #3a2b2b; /* GitHub icon color on hover */
+}
+
+.link a.c:hover {
+  color: #00acee; /* Twitter icon color on hover */
+}
+
+.link a.r:hover {
+  color: #e4405f; /* Instagram and YouTube icon color on hover */
+}
+
+
+.hero {
+  position: relative;
+}
+
+.hire-me-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hire-me-container.show {
+  transform: scale(1);
+}
+
+.hire-me-link {
   display: inline-block;
-  margin: 0 1rem;
-  padding: 1rem;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  font-size: 2rem;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #4caf50;
   color: #fff;
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.link :hover {
-  border-color: #ff0033;
-  color: #ff0033;
-  background-color: transparent;
-  box-shadow: 0px 0px 10px #ff0033, 0px 0px 20px #ff0033, 0px 0px 30px #ff0033, 0px 0px 40px #ff0033, 0px 0px 70px #ff0033, 0px 0px 80px #ff0033, 0px 0px 100px #ff0033;
-  transition: all 0.5s ease-in-out;
+.hire-me-link:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
 }
 
-.link :hover:before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
-  border: 2px solid #ff0033;
-  border-radius: 10px;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
-}
-
-.link :hover:after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
-  border: 2px solid #ff0033;
-  border-radius: 10px;
-  z-index: -2;
-  filter: blur(30px);
-}
-
-.link :hover span {
-  position: absolute;
-  display: block;
-  color: #ff0033;
-  text-shadow: 0px 0px 10px #ff0033, 0px 0px 20px #ff0033, 0px 0px 30px #ff0033, 0px 0px 40px #ff0033, 0px 0px 70px #ff0033, 0px 0px 80px #ff0033, 0px 0px 100px #ff0033;
-}
-@media screen and (max-width: 768px) {
-  h1{
-    font-size: 2.6rem;
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
   }
-  .hero .hero-title {
-  font-size: 2.3rem;
+  .hero-subtitle {
+    font-size: 20px;
   }
-  
-  .hero .hero-subtitle {
-  font-size: 2rem;
-  }
-  
   .link {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 20px;
   }
-  
-  .link a {
-    margin: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  }
+}

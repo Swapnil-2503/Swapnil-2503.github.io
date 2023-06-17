@@ -48,6 +48,7 @@ const projects = [
 
 function Projects() {
   return (
+    <div className="projects">
     <div className="projects-container">
       <div className="projects-list">
         {projects.map((project, idx) => (
@@ -61,6 +62,7 @@ function Projects() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

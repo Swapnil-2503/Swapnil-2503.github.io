@@ -1,9 +1,13 @@
+
+.projects{
+  background: #121212;
+}
 .projects-container {
   margin: 50px auto;
   max-width: 1200px;
   text-align: center;
+  background: #455057;
 }
-
 .projects-list {
   display: flex;
   flex-wrap: wrap;

@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/About.css";
 import { Email, Phone, LocationOn } from "@material-ui/icons";
-import myPhoto from '../assets/ProfilePhoto.jpg'
+import Resume from '../assets/pdf/Resume_Swapnil_Jadhav.pdf'
+import myPhoto from "../assets/ProfilePhoto.jpg";
 
 function About() {
   return (
@@ -17,7 +18,7 @@ function About() {
             <p>Birthday: January 25, 2003</p>
             <p>
               <LocationOn className="about-icon" />
-              Dharashiv, Maharashtra , India
+              Osmanabad, Maharashtra, India
             </p>
             <p>
               <Phone className="about-icon" />
@@ -27,21 +28,48 @@ function About() {
               <Email className="about-icon" />
               swapniljadhav6022@gmail.com
             </p>
+            <a href={Resume} className="hire-me-button">Resume</a>
           </div>
         </div>
         <div className="about-description">
-        <h3>Introduction</h3>
-<p>As a full-stack developer, I possess a diverse range of technical skills including proficiency in Java, ReactJS, NodeJS, HTML, CSS, JavaScript, SQL, and NoSQL. My experience in software development spans across multiple industries, allowing me to bring a unique perspective to each project.
-In addition to my technical expertise, I am also skilled in problem-solving and algorithmic thinking, which enables me to develop efficient and effective solutions to complex challenges. I have a strong background in data structures and algorithms, and I regularly participate in coding competitions and hackathons to sharpen my skills.
-Furthermore, I have a keen interest in IoT and embedded systems. I enjoy tinkering with hardware and electronics and have experience working with various microcontrollers and sensors. This allows me to design and develop innovative solutions that merge software and hardware to create cutting-edge products.
-Overall, my broad technical skill set, problem-solving abilities, and passion for innovation make me a valuable asset to any team or project.</p>
+          <h3>Introduction</h3>
+          <p>
+            As a full-stack developer, I possess a diverse range of technical skills including proficiency in Java,
+            ReactJS, NodeJS, HTML, CSS, JavaScript, SQL, and NoSQL. My experience in software development spans across
+            multiple industries, allowing me to bring a unique perspective to each project.
+          </p>
+          <p>
+            In addition to my technical expertise, I am also skilled in problem-solving and algorithmic thinking,
+            which enables me to develop efficient and effective solutions to complex challenges. I have a strong
+            background in data structures and algorithms and regularly participate in coding competitions and
+            hackathons to sharpen my skills.
+          </p>
+          <p>
+            Furthermore, I have a keen interest in IoT and embedded systems. I enjoy tinkering with hardware and
+            electronics and have experience working with various microcontrollers and sensors. This allows me to design
+            and develop innovative solutions that merge software and hardware to create cutting-edge products.
+          </p>
+          <p>
+            Overall, my broad technical skill set, problem-solving abilities, and passion for innovation make me a
+            valuable asset to any team or project.
+          </p>
+
+          <h3>Achievements</h3>
+          <ul>
+            <li>Codechef 2 ⭐</li>
+            <li>Leetcode top 40%</li>
+            <li>Merged 30+ PR</li>
+            <li>Problem solving certicates on Hackerrank</li>
+            <li>Solved 1000+ problems overall</li>
+          </ul>
+
           <h3>Interests & Hobbies</h3>
           <ul>
             <li>Problem Solving</li>
-            <li>Listening Music</li>
-            <li>Traveling and exploring new places</li>
-            <li>Making Youtube videos</li>
-            <li>Reading articles and tweets</li>
+            <li>Listening to Music</li>
+            <li>Traveling and Exploring New Places</li>
+            <li>Making YouTube Videos</li>
+            <li>Reading Articles and Tweets</li>
           </ul>
         </div>
       </div>
@@ -50,4 +78,3 @@ Overall, my broad technical skill set, problem-solving abilities, and passion fo
 }
 
 export default About;
-
