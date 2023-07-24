@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.b11e997c.css",
-    "main.js": "./static/js/main.83aabccd.js",
+    "main.css": "./static/css/main.ddcf262c.css",
+    "main.js": "./static/js/main.a96defa0.js",
     "static/js/787.21d17fcb.chunk.js": "./static/js/787.21d17fcb.chunk.js",
-    "static/media/Resume_Swapnil_Jadhav.pdf": "./static/media/Resume_Swapnil_Jadhav.7d48565bce8144a0f53e.pdf",
-    "static/media/ProfilePhoto.jpg": "./static/media/ProfilePhoto.57226342d1a600c20955.jpg",
+    "static/media/Resume_Swapnil_Jadhav.pdf": "./static/media/Resume_Swapnil_Jadhav.43f9186a1ec589750e4e.pdf",
     "static/media/proj3.jpg": "./static/media/proj3.001aa987c4bd8eaca52c.jpg",
     "static/media/proj2.jpg": "./static/media/proj2.307b1eada8da11ea871e.jpg",
     "static/media/proj6.jpg": "./static/media/proj6.49edf54f1c4e5a04acae.jpg",
     "static/media/proj4.jpg": "./static/media/proj4.30ea0ab20fe08f1d30cf.jpg",
     "static/media/proj5.jpg": "./static/media/proj5.8a97c98536f849565540.jpg",
+    "static/media/ProfilePhoto.jpg": "./static/media/ProfilePhoto.d90921a90263e9e8be4c.jpg",
+    "static/media/proj7.jpg": "./static/media/proj7.82939d15ff76509f6e2b.jpg",
     "index.html": "./index.html",
-    "main.b11e997c.css.map": "./static/css/main.b11e997c.css.map",
-    "main.83aabccd.js.map": "./static/js/main.83aabccd.js.map",
+    "main.ddcf262c.css.map": "./static/css/main.ddcf262c.css.map",
+    "main.a96defa0.js.map": "./static/js/main.a96defa0.js.map",
     "787.21d17fcb.chunk.js.map": "./static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b11e997c.css",
-    "static/js/main.83aabccd.js"
+    "static/css/main.ddcf262c.css",
+    "static/js/main.a96defa0.js"
   ]
 }
